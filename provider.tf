@@ -5,7 +5,7 @@ terraform {
       version = "~> 5.0"
     }
   }
-
+# Need to create s3 bucket
 # Backend state   
   backend "s3" {
     bucket = "rds-devops-terraform-state"
