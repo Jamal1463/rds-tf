@@ -1,7 +1,7 @@
 resource "aws_security_group" "rdssecuritygroup" {
   name        = "rds_security_group"
   description = "Allow inbound traffic only for MYSQL and all outbound traffic"
-  vpc_id      = aws_vpc.myvpc.id
+  vpc_id      = aws_vpc.rds-vpc.id
   tags = {
     Name = "rds_security_group"
   }
