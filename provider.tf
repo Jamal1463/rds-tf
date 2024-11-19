@@ -9,7 +9,7 @@ terraform {
 # Backend state   
   backend "s3" {
     bucket = "rds-devops-terraform-state"
-    # key    = "dev/vpc.tfstate"
+    key    = "dev/terraform.tfstate"
     region         = "us-west-2"
     dynamodb_table = "dynamodb-terraform-state-lock"
   }
