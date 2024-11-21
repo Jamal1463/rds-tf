@@ -6,19 +6,21 @@ terraform {
     }
   }
 # Need to create s3 bucket
-# Backend state   
+# Backend state 
+/*  
   backend "s3" {
     bucket = "rds-devops-terraform-state"
     key    = "dev/terraform.tfstate"
     region         = "us-west-2"
     dynamodb_table = "dynamodb-terraform-state-lock"
   }
+  */
 }
 
 provider "aws" {
   region = "us-west-2"
 }
-
+/*
 resource "aws_dynamodb_table" "state_lock" {
   name         = "dynamodb-terraform-state-lock"
   billing_mode = "PAY_PER_REQUEST"
@@ -29,3 +31,4 @@ resource "aws_dynamodb_table" "state_lock" {
     type = "S"
   }
 }
+*/
