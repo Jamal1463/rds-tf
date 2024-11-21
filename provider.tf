@@ -18,7 +18,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-1"
 }
 /*
 resource "aws_dynamodb_table" "state_lock" {

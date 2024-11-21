@@ -1,6 +1,6 @@
 # Network Vars
-region              = "us-west-2"
-subnet_ids          = ["subnet-058a7514ba8adbb07", "subnet-0dbcd1ac168414927", "subnet-032f5077729435858"]
+region              = "us-east-1"
+subnet_ids          = ["subnet-06ae908a2723ceeeb", "subnet-01150f08c0084f2f7", "subnet-003fff18b9a9506bb"]
 multi_az            = false
 publicly_accessible = true
 
